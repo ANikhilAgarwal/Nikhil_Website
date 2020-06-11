@@ -28,7 +28,29 @@ body{
     border-bottom: 1px ridge;
     min-height: 400px;
   }
-  
+
+.header_links{
+    margin: 0 0 40px 0;
+}
+
+.header_links a{
+    font-size: 30px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0);
+    color: #fff; 
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 12px;
+    /* border-radius: 50%; */
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    transition: 0.3s;
+}
+
+.header_links a:hover{
+    background: #6B6B6B;
+}
   /* .footer {
     background-color: rgba(255, 255, 255, 0);
     margin: 0px auto;
@@ -36,13 +58,13 @@ body{
   } */
   
   .jumbotron {
-    padding: 70px 30px 70px 30px;
+    /* padding: 70px 30px 70px 30px; */
     margin: 0px auto;
     /* background : rgba(255, 255, 255, 0); */
     background-image: url("/images/Home_image.jpg");
     background-repeat: no-repeat; 
     background-size: cover;
-    padding-bottom: 500px; 
+    /* padding-bottom: 500px;  */
     margin: auto; 
     color: rgba(255, 255, 255, 0);
   }
@@ -57,7 +79,81 @@ body{
     font-weight: bold;
   } */
 
+/*--------------------------------------------------------------
+# About Header
+--------------------------------------------------------------*/
+.about_header{
+    padding: 50px;
+}
 
+.about_header  h3{
+    text-align: center;
+    font-weight: bolder;
+    font-display: top;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+    background: #040507;
+    color: #6B6B6B;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  #footer h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #6B6B6B;
+    position: relative;
+    padding: 0;
+    margin: 0 0 15px 0;
+  }
+  
+  #footer p {
+    font-size: 15;
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 40px 0;
+  }
+  
+  #footer .social-links {
+    margin: 0 0 40px 0;
+  }
+  
+  #footer .social-links a {
+    font-size: 30px;
+    display: inline-block;
+    background: #46423b;
+    color: #fff; 
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    transition: 0.3s;
+  }
+  
+  #footer .social-links a:hover {
+    background: #6B6B6B;
+  }
+  
+  #footer .copyright {
+    margin: 0 0 5px 0;
+  }
+  
+  #footer .credits {
+    font-size: 13px;
+  }
+  #footer .copyright a{
+      font-size: 20px;
+      color: whitesmoke;
+  }
 
 
 
@@ -65,7 +161,10 @@ body{
 
 
 #home_svg{
+    display: block;
     position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50% ,-50%);
     animation: fill 0.5s ease forwards 6.5s; 
 }
