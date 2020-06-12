@@ -10,12 +10,11 @@ body{
 }
 
 .navbar_nav{
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0;
+    margin: auto;
 }
 
-.svg_div{
-    padding-top: 700px;
-}
 
 .row-header{
     margin: 0px auto;
@@ -79,6 +78,12 @@ body{
     font-weight: bold;
   } */
 
+
+  @media only screen and (max-width: 600px) {
+      .header_know{
+          display: block;
+      }
+  }
 /*--------------------------------------------------------------
 # About Header
 --------------------------------------------------------------*/
@@ -156,10 +161,18 @@ body{
       color: whitesmoke;
   }
 
+  #footer .footer_contact{
+      padding-top: 20px;
+      padding-bottom: 70px;
+  }
+
+  #footer h3{
+      padding-bottom: 35px;
+  }
   #footer .footer_contact a{
     position: absolute;
-    bottom: 50%;
-    left: 50%;
+    /* bottom: 50%;
+    left: 50%; */
     transform: translate(-50%,-50%);
     width: 180px;
     height: 60px;
@@ -203,16 +216,22 @@ body{
 
 
 
-
+.svg_div{
+    padding-top: 700px;
+}
 
 #home_svg{
     display: block;
+    width: 100%; 
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% ,-50%);
-    animation: fill 0.5s ease forwards 6.5s; 
+    transform: translate(-50% ,-50%); 
+    animation: fill 0.5s ease forwards 6.5s;
+    
 }
+
+
 
 #home_svg path:nth-child(1){
     stroke-dasharray: 170.84;
