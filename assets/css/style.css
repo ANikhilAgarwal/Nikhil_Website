@@ -30,16 +30,19 @@ body{
 
 .header_links{
     margin: 0 0 40px 0;
+    padding-top: 190px;
+    padding-bottom: 0px;
 }
 
 .header_links a{
-    font-size: 30px;
+    font-size: 40px;
     display: inline-block;
     background: rgba(255, 255, 255, 0);
     color: #fff; 
     line-height: 1;
-    padding: 8px 0;
-    margin-right: 12px;
+    padding:8px 0;
+    margin-right: 20px;
+    margin-left: 20px;
     /* border-radius: 50%; */
     text-align: center;
     width: 45px;
@@ -48,7 +51,7 @@ body{
 }
 
 .header_links a:hover{
-    background: #6B6B6B;
+    background: #rgba(255,255,255,0);
 }
   /* .footer {
     background-color: rgba(255, 255, 255, 0);
@@ -78,6 +81,55 @@ body{
     font-weight: bold;
   } */
 
+  .header_know{
+      margin-bottom: 55px;
+      padding-bottom: 50px;
+  }
+
+  .header_know btn-dark{
+      color: salmon;
+  }
+.header_know a{
+    /* position: absolute;
+    text-align: center;
+    font-size: 25px; */
+    position: absolute;
+    /* bottom: 50%;
+    left: 50%; */
+    transform: translate(-50%,-50%);
+    width: 240px;
+    height: 60px;
+    text-align: center; 
+    line-height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: #fff;
+    text-decoration: none;
+  }
+.header_know a svg,
+.header_know a svg rect{
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    fill:transparent;
+}
+.header_know a svg rect{
+    stroke: #fff;
+    stroke-width: 4;
+    transition: 0.5s;
+    stroke-dasharray: 600,500;
+    stroke-dashoffset: 0,0;
+}
+.header_know a:hover svg rect{
+    stroke-dasharray: 130,380;
+    stroke-dashoffset: 150;
+    stroke: rgb(207, 19, 66)
+}
 
   @media only screen and (max-width: 600px) {
       .header_know{
@@ -217,7 +269,7 @@ body{
 
 
 .svg_div{
-    padding-top: 700px;
+    padding-top: 400px;
 }
 
 #home_svg{
