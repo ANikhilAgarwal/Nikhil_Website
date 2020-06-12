@@ -150,11 +150,56 @@ body{
   #footer .credits {
     font-size: 13px;
   }
+
   #footer .copyright a{
       font-size: 20px;
       color: whitesmoke;
   }
 
+  #footer .footer_contact a{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 180px;
+    height: 60px;
+    text-align: center; 
+    line-height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer .footer_contact a svg,
+#footer .footer_contact a svg rect
+{
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    fill:transparent;
+}
+
+#footer .footer_contact a svg rect
+{
+    stroke: #fff;
+    stroke-width: 4;
+    transition: 0.5s;
+    stroke-dasharray: 500,500;
+    stroke-dashoffset: 0,0;
+}
+
+#footer .footer_contact a:hover svg rect
+{
+    stroke-dasharray: 120,400;
+    stroke-dashoffset: 250;
+    stroke: rgb(207, 19, 66)
+}
 
 
 
