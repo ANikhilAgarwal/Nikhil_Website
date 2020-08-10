@@ -99,7 +99,7 @@ body {
     /* padding: 70px 30px 70px 30px; */
     margin: 0px auto;
     /* background : rgba(255, 255, 255, 0); */
-    background-image: url("/images/Home_image.jpg");
+    background-image: url("../../images/Home_image.jpg");
     background-repeat: no-repeat; 
     background-size: cover;
     background-attachment: fixed;
