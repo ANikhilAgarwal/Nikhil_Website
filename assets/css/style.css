@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
  /* *{
     padding: 0;
     margin: 0;
@@ -41,18 +42,35 @@ body {
     text-align: center;
 }  
 
-
-
-
-.navbar_nav{
-    background-color: rgba(0, 0, 0, 1);
-    padding: 0;
-    margin: auto;
-    font-size: larger;
+body {
+    -youbkit-touch-callout: none; /* iOS Safari */
+    -youbkit-user-select: none;   /* Chrome 6.0+, Safari 3.1+, Edge & Opera 15+ */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE 10+ and Edge */
+    user-select: none;            /* Non-prefixed version,
+                                  currently supported by Chrome and Opera */
 }
 
+.navbar-brand{
+    font-size: 1em;
+}
+
+.navbar_nav{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0px 10px 0px;
+    margin: auto;
+    font-size: 1.9em;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+}
+
+.nav-item{
+    padding-left: 35px;
+    font-family: 'Dosis', sans-serif;
+}
 
 .row-header{
+    position: relative;
     margin: 0px auto;
     padding: 0px auto;
   }
@@ -65,7 +83,7 @@ body {
   }
 
 .header_links{
-    margin: 0 0 40px 0;
+    /* margin: 0 0 40px 0; */
     padding-top: 190px;
     padding-bottom: 0px;
 }
@@ -83,11 +101,13 @@ body {
     text-align: center;
     width: 45px;
     height: 45px;
-    transition: 0.3s;
+    transition: transform 0.3s;
 }
 
 .header_links a:hover{
     background: rgba(255,255,255,0);
+    color:  rgb(207, 19, 66);
+    transform: scale(1.3);
 }
   /* .footer {
     background-color: rgba(255, 255, 255, 0);
@@ -118,14 +138,19 @@ body {
     font-weight: bold;
   } */
 
-  .header_know{
-      margin-bottom: 55px;
-      padding-bottom: 50px;
-  }
+.header_know{
+    display: inline-block;
+    padding-top: 50px;
+    vertical-align: middle;
+    /* margin-bottom: 55px; */
+    margin-top: 40px;
+    padding-bottom: 50px;
+    height: 100%;
+}
 
-  .header_know btn-dark{
-      color: salmon;
-  }
+.header_know btn-dark{
+    color: salmon;
+}
 .header_know a{
     /* position: absolute;
     text-align: center;
@@ -140,7 +165,9 @@ body {
     line-height: 60px;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 1.5em;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
     letter-spacing: 3px;
     color: #fff;
     text-decoration: none;
@@ -172,6 +199,19 @@ body {
       .header_know{
           display: block;
       }
+  }
+
+
+  .typer-row{
+      text-align: center;
+      display: inline;
+  }
+  .typer{
+      color: #FF0077;
+      font-weight: bold;
+      font-size: 2.9em;
+      font-family: 'Dosis', sans-serif;
+
   }
 /*--------------------------------------------------------------
 # About Header
@@ -290,13 +330,15 @@ body {
 
 
  #resume {
-	padding-top: 12rem;
-	padding-bottom: 12rem;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
  }
 
 #resume .resume-header {
 	text-align: center;
 }
+
+
 #resume .resume-header h2 {
 	color: #FF0077;
 }
@@ -508,6 +550,7 @@ body {
   
   #footer .social-links a:hover {
     background: #6B6B6B;
+    color: rgb(207, 19, 66);
   }
   
   #footer .copyright {
@@ -577,6 +620,39 @@ body {
 }
 
 
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+    position: fixed;
+    display: none;
+    text-decoration: none !important;
+    text-align: center;
+    right: 15px;
+    bottom: 15px;
+    transition: display 0.5s ease-in-out;
+    z-index: 99999;
+}
+  
+.back-to-top i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background: rgb(207, 19, 66);
+    color: #fff;
+    transition: all 0.4s;
+}
+  
+.back-to-top i:hover {
+    background: rgb(230, 108, 138);
+    color: #fff;
+    transition: background 0.2s ease-in-out;
+}
+
 
 .svg_div{
     padding-top: 400px;
@@ -584,6 +660,7 @@ body {
 
 #home_svg{
     display: block;
+    margin-top: 50px;
     width: 100%; 
     position: absolute;
     top: 50%;
@@ -777,3 +854,5 @@ body {
         fill: whitesmoke;
     }
 }
+
+
